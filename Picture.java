@@ -68,6 +68,8 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-185);
         
+        
+        
     }
 
     /**
@@ -96,5 +98,49 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    
+    /**
+     * Change this picture to atardecer
+     */
+    public void atardecer()
+    {
+        wall = new Square();
+        wall.moveHorizontal(-140);
+        wall.moveVertical(20);
+        wall.changeSize(120);
+        wall.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-120);
+        window.moveVertical(40);
+        window.changeSize(40);
+        window.makeVisible();
+
+        roof = new Triangle();  
+        roof.changeSize(60, 180);
+        roof.moveHorizontal(20);
+        roof.moveVertical(-60);
+        roof.makeVisible();
+
+        
+        
+        
+        
+        campo = new Square();
+        campo.changeColor("green");
+        campo.moveHorizontal(-400);
+        campo.moveVertical(140);
+        campo.changeSize(373737);
+        campo.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-105);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(400);
     }
 }
